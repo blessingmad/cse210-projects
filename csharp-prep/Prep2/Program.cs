@@ -37,7 +37,7 @@ class Program
         }
         else
         {
-            Console.Write("Next time.");
+            Console.Write("Palesa.");
         }
 
 
