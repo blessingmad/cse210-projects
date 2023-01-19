@@ -19,7 +19,7 @@ class Program
 
 
         Resume myResume = new Resume();
-        myResume._name = "Moipone Palesa";
+        myResume._name = "Blessing Madhuma";
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
 
