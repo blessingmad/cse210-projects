@@ -15,7 +15,9 @@ public class _journalEntry
 
     {
         Console.WriteLine($"{_entryDate} ({_userPrompt}) {_endProgram}");
+        Console.WriteLine();
     }
+
 }
 
 

@@ -5,14 +5,17 @@ public class Journal
     public _journalEntry;
 
 
-    public List<Entry> _entry1 = new List<Entry>();
+    public List<Entry> _entries = new List<Entry>();
 
 
     public void Display ()
 
     {
-        Console.WriteLine($"Display: {_journalEntry}");
-        
+        Console.WriteLine($"who: {_userPrompt}");
+        Console.WriteLine("Entries");
+
+        foreach (Entry entries in _journalEntr)
+
     }
 
 
