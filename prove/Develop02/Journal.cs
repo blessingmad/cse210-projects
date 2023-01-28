@@ -2,7 +2,7 @@ using System;
 
 public class Journal
 {
-    public _journalEntry;
+    public string _userInput;
 
 
     public List<Entry> _entries = new List<Entry>();
@@ -11,10 +11,15 @@ public class Journal
     public void Display ()
 
     {
-        Console.WriteLine($"who: {_userPrompt}");
+        Console.WriteLine($"Display: {_userInput}");
         Console.WriteLine("Entries");
+        Console.WriteLine();
 
-        foreach (Entry entries in _journalEntr)
+        foreach (Entry entries in _entries);
+            entries.Display();
+
+            
+
 
     }
 
