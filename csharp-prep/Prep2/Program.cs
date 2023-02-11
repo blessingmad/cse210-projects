@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        DateTime theCurrentTime = DateTime.Today;
+        string dateText = theCurrentTime.ToLongDateString();
+
+        Console.WriteLine($" {dateText}");
+
         Console.Write("What is your percentage? ");
         string answer = Console.ReadLine();
         int percent = int.Parse(answer);

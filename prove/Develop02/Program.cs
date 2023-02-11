@@ -1,11 +1,18 @@
-using System;
+using System.IO;
 
 class Program
 {
     static void Main(string[] args)
-
+    
     
     { 
+        DateTime theCurrentTime = DateTime.Today;
+        string dateText = theCurrentTime.ToLongDateString();
+
+        Console.WriteLine($"{dateText}");
+
+        
+
         Entry entries1 = new Entry();
         entries1._userPrompt = "Who is the most intresting person you ment today";
         entries1._endProgram = 0;
