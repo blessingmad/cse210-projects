@@ -7,15 +7,17 @@ public class Reference
     private int _chapter;
     private int _verse;
     private string _verseInformation;
+
+    public void Display()
+
+    public Reference()
+    {
+        _book = "John";
+        _chapter = 3;
+        _verse = 16;
+        _verseInformation = ",";
+    }
+
     
-    public string(GetReference)
 
-    {
-        return _book;
-    }
-    public void SetReference ("John")
-
-    {
-        _book = John
-    }
 }

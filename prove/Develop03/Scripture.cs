@@ -6,11 +6,17 @@ public class Scripture
    private string _reference;
    private string _scripture; 
 
-   public List<Scripture> _scripture = new List<Scripture>();
+   public List<Scripture> scripture = new List<Scripture>(); 
 
+   public Scripture()
    {
-        Console.WriteLine($"{_reference}");
+          _reference = "John 3:16";
+          _scripture = "For God so loved the world, that hhe gave his only begotten Son that whosoever believeth in him should not perish, but have everlasting life";
    }
+     {
+          Console.WriteLine($ "{_scripture}");
+          Console.writeLine();
+          
+     
+     }
 }
-
-
