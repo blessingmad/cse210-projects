@@ -14,6 +14,6 @@ public class WritingAssignment : Assignment
     }
     public string GetWritingInformation()
     {
-        return $"{_studentName}{_topic} - {_title}";
+        return $"{_title} {_topic} {_studentName}";
     }
 }
