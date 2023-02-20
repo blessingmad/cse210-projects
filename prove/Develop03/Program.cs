@@ -11,15 +11,30 @@ class   Program
         string dateText = theCurrentTime.ToLongDateString();
         Console.WriteLine($"{dateText}");
       
-   
-        Console.WriteLine ("For God so loved the world, that he gave his only begotten Son that whosoever believeth in him should not perish, but have everlasting life");
-        Console.WriteLine($"_sc");
-
-        string _reference = Console.ReadLine();
-        Scripture scripture1 = new Scripture();
        
-        Reference myReference = new Reference();
-        
-        Word word = new Word(); 
+        Scripture s1 = new Scripture("John 3:16" , "For God so loved the world, that He gave His only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life.");
+        Console.WriteLine(s1.GetVerseInfo());
+
+        Reference r1 = new Reference("Provebs" , 3 , 5-6 );
+        Console.WriteLine(" Provebs Trust in the Lord with all thine heart; and lean not unto thine own understanding. 6 In all thy ways acknowledge him, and he shall direct thy paths.");
+        Console.ReadLine();
+
+        Random random = new Random();
+        string[] randomWord= new string[]{"For", "God", "so","love", "the","world", "that", "He","gave","His","Only", "Begotten", "Son ", "that","whosoever","believeth", "in","Him", "should","not","perish","but","have","everlasting", "life"};
+        Console.Write(randomWord[random.Next()]);
+
+        Console.Write("Press (Enter) to erase other words or (Quiet) to stop");
+        foreach (String randomWord in Word)
+        {
+            
+        }
+
+        //while (randomWord != hidden)
+        //Console.ReadLine();
+        //Console.Clear();
+        //Console.WriteLine("_ _ _ _");
+         
+          
     }
+
 } 
