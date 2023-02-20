@@ -3,25 +3,19 @@ using System;
 public class Fraction
 
 {
-    private int _numerator;
-    private int _denominator;
+    private int _numerator = 1 ;
+    private int _denominator = 1 ;
 
     
-    public Fraction ()
-    {
-        private_numerator = 1;
-        private_denominator = 1;
-    }
-    public Fraction (int wholeNumber)
-    {
-        _numerator = 5;
-    }
-    public Fraction (int numerator, int denomenator )
+    public Fraction (int numerator, int denomenator)
     {
         _numerator = numerator;
         _denominator = denomenator;
     }
-    public GetNumerator()
+    public string GetNumerator()
+    {
+        return  _numerator ;
+    }
     public string GetFractionString()
     {
         string text = $"{_numerator} / {_denomenator}";
@@ -35,6 +29,6 @@ public class Fraction
 
 
 
-
+ 
 
 }

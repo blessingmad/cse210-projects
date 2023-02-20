@@ -3,16 +3,24 @@ using System;
 public class Word
 
 {
-    private string _singleWord;
-    private string _shown;
-    private string _hidden;
+    private string _randomWord;
+   
 
-    public Word()
+    public Word(string randomWord, string shown, string hidden)
     {
-        _singleWord = ".";
-        _shown = ",";
-        _hidden = "_";
+        _randomWord = randomWord;
+        
+    }
+    public string GetSingleWord()
+    {
+        return _randomWord;
+    }
+  
+    public string GetInfo()
+    {
+        return _randomWord ;
     }
 
-    
+
+
 }

@@ -25,9 +25,4 @@ public class Assignment
     {
         _topic = topic;
     }
-    
-    
-        
-    
-
-}
+}    

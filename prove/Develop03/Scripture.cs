@@ -5,18 +5,22 @@ public class Scripture
 {
    private string _reference;
    private string _scripture; 
-
-   public List<Scripture> scripture = new List<Scripture>(); 
-
-   public Scripture()
+   public Scripture(string reference, string scripture)
    {
-          _reference = "John 3:16";
-          _scripture = "For God so loved the world, that hhe gave his only begotten Son that whosoever believeth in him should not perish, but have everlasting life";
+          _reference = reference;
+          _scripture = scripture;
    }
-     {
-          Console.WriteLine($ "{_scripture}");
-          Console.writeLine();
-          
-     
-     }
+   public string GetReference()
+   {
+     return _reference;
+   }
+   public string GetScripture()
+   {
+     return _scripture;
+   }
+   public string GetVerseInfo()
+   {
+     return _reference + "-" + _scripture;
+   }
+
 }

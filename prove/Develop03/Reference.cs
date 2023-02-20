@@ -6,18 +6,26 @@ public class Reference
     private string _book;
     private int _chapter;
     private int _verse;
-    private string _verseInformation;
-
-    public void Display()
-
-    public Reference()
+    public Reference(string book, int chapter, int verse)
     {
-        _book = "John";
-        _chapter = 3;
-        _verse = 16;
-        _verseInformation = ",";
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
     }
-
-    
-
+    public string GetBook()
+    {
+        return _book;
+    }
+    public int GetChapter()
+    {
+        return _chapter;
+    }
+    public int GetVerse()
+    {
+        return _verse;
+    }
+    public string GetAll()
+    {
+        return _book + _chapter + _verse;
+    }
 }
