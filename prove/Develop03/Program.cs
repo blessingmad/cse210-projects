@@ -9,7 +9,9 @@ class   Program
         
         DateTime theCurrentTime = DateTime.Today;
         string dateText = theCurrentTime.ToLongDateString();
+        Console.WriteLine("...............................");
         Console.WriteLine($"{dateText}");
+        Console.WriteLine("...............................");
       
        
         Scripture s1 = new Scripture("John 3:16" , "For God so loved the world, that He gave His only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life.");
@@ -23,18 +25,16 @@ class   Program
         string[] randomWord= new string[]{"For", "God", "so","love", "the","world", "that", "He","gave","His","Only", "Begotten", "Son ", "that","whosoever","believeth", "in","Him", "should","not","perish","but","have","everlasting", "life"};
         Console.Write(randomWord[random.Next()]);
 
-        Console.Write("Press (Enter) to erase other words or (Quiet) to stop");
-        foreach (String randomWord in Word)
-        {
-            
-        }
+        Console.WriteLine("Press (Enter) to erase other words or (Quiet) to stop");
+
+    
+        
 
         //while (randomWord != hidden)
-        //Console.ReadLine();
-        //Console.Clear();
-        //Console.WriteLine("_ _ _ _");
-         
+        //
+        //
+        //Console.WriteLine("_ _ _ _")
           
     }
 
-} 
+}
