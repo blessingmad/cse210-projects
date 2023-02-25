@@ -27,7 +27,7 @@ class   Program
 
         Console.WriteLine("Press (Enter) to erase other words or (Quiet) to stop");
 
-    
+     
         
 
         //while (randomWord != hidden)

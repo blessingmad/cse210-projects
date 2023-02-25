@@ -14,12 +14,12 @@ public class Fraction
     }
     public string GetNumerator()
     {
-        return  _numerator ;
+        return  $"{_numerator}";
     }
     public string GetFractionString()
     {
-        string text = $"{_numerator} / {_denomenator}";
-        return text;
+        return $"{_numerator }/ {_denomenator}";
+        
     }
     public double GetDecimalValue()
     {

@@ -2,15 +2,17 @@ using System;
 
 public class BreathActivity : Activity
 {
-    private string _activityDiscription = "";
+    
     private string _breathinAndout = "";
-    public BreathActivity(string startingMessage, string endMessage, string _activityDiscription, string breathinAndout)
-    : base(startingMessage , endMessage)
+    public BreathActivity(string startingMessage, string endMessage, string showAnimation, string breathinAndout)
+    : base(startingMessage , showAnimation, endMessage)
     {
-        _activityDiscription = activityDiscription;
+        
+        _breathinAndout = breathinAndout;
+
     }
     public string GetActivityDiscription()
     {
-        return _activityDiscription;
+        return  $"{_breathinAndout}";
     }
 }
