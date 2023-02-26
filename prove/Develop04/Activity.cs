@@ -22,6 +22,10 @@ public class Activity
     {
         return _endMessage;
     }
+    public string GetAnimation()
+    {
+        return _showAnimation;
+    }
     
     
     public string GetDetails()

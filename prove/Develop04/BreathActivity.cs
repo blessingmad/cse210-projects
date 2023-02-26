@@ -3,16 +3,18 @@ using System;
 public class BreathActivity : Activity
 {
     
-    private string _breathinAndout = "";
-    public BreathActivity(string startingMessage, string endMessage, string showAnimation, string breathinAndout)
+    private string _breathIn = "";
+    private string _breathOut = "";
+    public BreathActivity(string startingMessage, string endMessage, string showAnimation, string breathIn, string _breathOut)
     : base(startingMessage , showAnimation, endMessage)
     {
         
-        _breathinAndout = breathinAndout;
+        _breathIn = breathIn;
+       //_breathOut = breathOut;
 
     }
     public string GetActivityDiscription()
     {
-        return  $"{_breathinAndout}";
+        return  $"{_breathIn}  ";
     }
 }

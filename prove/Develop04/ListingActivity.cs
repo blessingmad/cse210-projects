@@ -11,4 +11,5 @@ public class ListingActivity : Activity
     {
         return $"{_randomListing}";
     }
+    
 }
