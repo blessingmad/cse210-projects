@@ -2,11 +2,11 @@ using System;
 public class passSacrament : Goals
 {
     private string _twiceAmonth ;
-    private string _getPoints ;
-    public passSacrament(string markComplete, string twiceAmonth, string getPoints) : base (markComplete)
+    private string _getNumber ;
+    public passSacrament(string markComplete, string twiceAmonth, string getNumber) : base (markComplete)
     {
         _twiceAmonth = twiceAmonth;
-        _getPoints = getPoints;
+        _getNumber = getNumber;
     }
     public override string GetRecord()
     {
