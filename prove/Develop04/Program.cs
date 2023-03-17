@@ -60,6 +60,7 @@ class Program
         animationString.Add("*");
         animationString.Add("#");
         animationString.Add(".");
+        animationString.Add("$");
 
         foreach(string s in animationString)
         {
