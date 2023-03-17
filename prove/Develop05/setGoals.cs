@@ -1,16 +1,15 @@
 using System;
 public class setGoals : Goals
 {
-    private double _recordGoal;
-    private double _putPoints;
-    public setGoals(string markComplete, double recordGoal, double _putPoints ) : base(markComplete);
+    private string _getGoal;
+    private string _check ;
+    public setGoals(string markComplete, string getGoal, string check) : base (markComplete)
     {
-        _recordGoal = recordGoal;
-        _putPoints = putPoints;
+        _getGoal = getGoal;
+        _check = check;
     }
-
-    public override double GetRecord()
+    public override string GetRecord()
     {
-        return ${_recordGoal} ;
+        return   _getGoal;
     }
 }

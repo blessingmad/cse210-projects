@@ -1,14 +1,14 @@
 using System;
 public class readSriptures : Goals
 {
-    private double _duration ;
-    private double _addPoints ;
-    public readSriptures(string markComplete, double duration, double addPoints) : base (markComplete)
+    private string _duration ;
+    private string _addPoints ;
+    public readSriptures(string markComplete, string duration, string addPoints) : base (markComplete)
     {
         _duration = duration;
         _addPoints = addPoints;
     }
-    public override double GetRecord()
+    public override string GetRecord()
     {
         return   _duration;
     }

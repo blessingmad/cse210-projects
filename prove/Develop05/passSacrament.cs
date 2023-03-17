@@ -1,14 +1,14 @@
 using System;
 public class passSacrament : Goals
 {
-    private double _twiceAmonth ;
-    private double _getPoints ;
-    public passSacrament(string markComplete, double twiceAmonth, double getPoints) : base (markComplete)
+    private string _twiceAmonth ;
+    private string _getPoints ;
+    public passSacrament(string markComplete, string twiceAmonth, string getPoints) : base (markComplete)
     {
         _twiceAmonth = twiceAmonth;
         _getPoints = getPoints;
     }
-    public override double GetRecord()
+    public override string GetRecord()
     {
         return   _twiceAmonth;
     }

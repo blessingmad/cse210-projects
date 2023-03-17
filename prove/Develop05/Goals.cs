@@ -12,5 +12,5 @@ public abstract class Goals
     {
         return _markComplete;
     }
-    public abstract double GetRecord();
+    public abstract string GetRecord();
 }

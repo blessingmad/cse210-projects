@@ -37,10 +37,11 @@ class Program
         Console.WriteLine($"{results}");
         Console.ReadLine();
 
+        readSriptures g1 = new readSriptures("1", "2", "3");
 
 
-        //List<Goals> goals = new List<Goals>();
-        //Goals g1 = new Goals('Reading Scripyures', )
+        List<Goals> goals = new List<Goals>();
+        ////goals.Add(new Goals());
         //Console.WriteLine("Hello Develop05 World!");
     }
 }
