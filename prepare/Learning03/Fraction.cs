@@ -15,14 +15,16 @@ public class Fraction
     public string GetNumerator()
     {
         return  $"{_numerator}";
+
     }
+
     public string GetFractionString()
     {
         return $"{_numerator }/ {_denomenator}";
         
     }
     public double GetDecimalValue()
-    {
+    { 
         return (double)_numerator / (double)_denominator;
     }
 
