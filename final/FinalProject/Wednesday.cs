@@ -1,7 +1,7 @@
 public class Wednesday : Studies
 {
     private string _faith;
-    public Wednesday(string standardStartingMessage, string scripture, string faith) : base (standardStartingMessage, scripture)
+    public Wednesday(string record, string scripture, string faith) : base (record, scripture)
     {
         _faith = faith;
     }

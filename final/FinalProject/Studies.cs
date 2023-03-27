@@ -1,16 +1,16 @@
 using System;
 public abstract class Studies
 {
-    private string _standardStartingMessage;
+    private string _record;
     private string _scripture;
-    public Studies(string standardStartingMessage, string scripture)
+    public Studies(string record, string scripture)
     {
-        _standardStartingMessage = standardStartingMessage;
+        _record = record;
         _scripture = scripture;
     }
     public string GetStartingMessage()
     {
-        return _standardStartingMessage;
+        return _record;
     }
     public string GetScripture()
     {

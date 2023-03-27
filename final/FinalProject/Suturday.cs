@@ -1,7 +1,7 @@
 public class Suturday : Studies
 {
     private string _temple;
-    public Suturday(string standardStartingMessage, string scripture, string temple) : base (standardStartingMessage, scripture)
+    public Suturday(string record, string scripture, string temple) : base (record, scripture)
     {
         _temple = temple;
     }

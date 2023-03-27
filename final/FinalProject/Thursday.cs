@@ -1,7 +1,7 @@
 public class Thursday : Studies
 {
     private string _sacrifice;
-    public Thursday(string standardStartingMessage, string scripture, string sacrifice) : base (standardStartingMessage, sacrifice)
+    public Thursday(string record, string scripture, string sacrifice) : base (record, sacrifice)
     {
         _sacrifice = sacrifice;
 
