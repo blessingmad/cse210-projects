@@ -41,7 +41,7 @@ class Program
 
 
         List<Goals> goals = new List<Goals>();
-        ////goals.Add(new Goals());
+        goals.Add(g1);
         //Console.WriteLine("Hello Develop05 World!");
     }
 }
