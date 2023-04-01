@@ -83,49 +83,55 @@ class Program
         Console.WriteLine("Well come back. Share what you have in mind.");
         Console.WriteLine();
 
+       
         List<Studies>  studies = new List<Studies>();
-        Monday s1 = new Monday("John 4", "Read", "Done");
+
+
+        Monday s1 = new Monday("John 4", "Thought", "Record");
         studies.Add(s1);
 
-        Tuesday s2 = new Tuesday("Moroni", "Sing", "Scoop");
+        Tuesday s2 = new Tuesday("Moroni", "Sing", "Game");
         studies.Add(s2);
 
-        Wednesday s3 = new Wednesday ("Peter 5", "Dance", "Party");
+        Wednesday s3 = new Wednesday ("Peter 5", "Teach", "Refresh");
         studies.Add(s3);
 
-        Thursday s4 = new Thursday("Alma 34", "Scoop", "Yes");
+        Thursday s4 = new Thursday("Alma 34", "Testfy", "Share");
         studies.Add(s4);
 
-        Friday s5 = new Friday("Mormon 10", "Nephi 2", "Money");
+        Friday s5 = new Friday("Mormon 10", "Nephi 2", "Stewardship");
         studies.Add(s5);
 
-        Suturday s6 = new Suturday("Daniel 13", "Eating", "Jumping");
+        Suturday s6 = new Suturday("Daniel 13", "Prepare", "Eating");
         studies.Add(s6);
 
-        Sunday s7 = new Sunday("James 5", "Kissing", "Bouwling");
+        Sunday s7 = new Sunday("James 5", "Sacrifice", "Fellowship");
         studies.Add(s7);
 
         foreach (Studies s in studies)
         {
-            string standardStartingMessage = s.GetStartingMessage ();
+            string record = s.GetRecord();
             string scripture = s.GetScripture ();
             string summary = s.GetSummary ();
 
-            Console.WriteLine($"{standardStartingMessage} {scripture} {summary}");
+            Console.WriteLine($"{record} {scripture} {summary}");
 
         }
-        string respond = Console.ReadLine();
-        int digit = int.Parse(respond);
-        string output = "";
-        if (digit == 1)
+
+        string word = Console.ReadLine();
+        int value = int.Parse(word);
+        string response = "";
+        if (value == 1)
         {
-            output = ("{s1}");
+            response = " Monday ";
         }
-        else {
-            output = ("{S4}");
+        else
+        {
+            response = "Done";
         }
-        Console.WriteLine($"{output}");
+        Console.WriteLine($"{response}");
         Console.WriteLine();
+
 
         
     }

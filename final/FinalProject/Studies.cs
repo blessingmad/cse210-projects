@@ -8,7 +8,7 @@ public abstract class Studies
         _record = record;
         _scripture = scripture;
     }
-    public string GetStartingMessage()
+    public string GetRecord()   
     {
         return _record;
     }
